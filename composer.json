@@ -11,5 +11,9 @@
             "email": "buthallk2@mail.ru"
         }
     ],
-    "require": {}
+    "require": {
+        "php": "^8.0",
+        "ext-json": "*",
+        "fakerphp/faker": "^1.19"
+    }
 }
