@@ -1,0 +1,15 @@
+{
+    "name": "goshawork/lesson1",
+    "autoload": {
+        "psr-4": {
+            "Goshawork\\Lesson1\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gosha Fadeev",
+            "email": "buthallk2@mail.ru"
+        }
+    ],
+    "require": {}
+}

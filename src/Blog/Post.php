@@ -1,8 +1,8 @@
 <?php
 
-namespace GeekBrains\Blog;
+namespace Goshawork\Lesson1\Blog;
 
-use GeekBrains\Person\Person;
+use Goshawork\Lesson1\Person\Person;
 
 class Post
 {

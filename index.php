@@ -1,17 +1,10 @@
 <?php
 
-use GeekBrains\Blog\Post;
-use GeekBrains\Person\Name;
-use GeekBrains\Person\Person;
+require_once __DIR__ . '/vendor/autoload.php';
 
-spl_autoload_register(function ($class) {
-    $file = str_replace('\\', DIRECTORY_SEPARATOR, $class) . '.php';
-
-    if (file_exists($file)) {
-        require $file;
-    }
-});
-
+use Goshawork\Lesson1\Blog\Post;
+use Goshawork\Lesson1\Person\Name;
+use Goshawork\Lesson1\Person\Person;
 
 $post = new Post(
     new Person(
@@ -20,6 +13,5 @@ $post = new Post(
     ),
     'Всем привет!'
 );
-
 
 print $post;

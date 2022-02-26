@@ -1,6 +1,6 @@
 <?php
 
-namespace GeekBrains\Person;
+namespace Goshawork\Lesson1\Person;
 
 use DateTimeImmutable;
 
