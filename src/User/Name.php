@@ -1,6 +1,6 @@
 <?php
 
-namespace Goshawork\Lesson1\Person;
+namespace App\User;
 
 class Name
 {
@@ -8,6 +8,19 @@ class Name
         private string $firstName,
         private string $lastName
     ) {
+    }
+
+    /**
+     * @return string
+     */
+    public function getFirstName(): string
+    {
+        return $this->firstName;
+    }
+
+    public function getLastName(): string
+    {
+        return $this->lastName;
     }
 
     public function __toString()

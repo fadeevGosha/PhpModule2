@@ -1,16 +1,15 @@
 <?php
 
-namespace Goshawork\Lesson1\Blog;
+namespace App\Blog;
 
-use Goshawork\Lesson1\Person\Person;
+use App\User\User;
 
 class Post
 {
     public function __construct(
-        private Person $author,
+        private User $author,
         private string $text
-    ) {
-    }
+    ) {}
 
     public function __toString()
     {

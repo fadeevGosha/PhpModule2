@@ -2,7 +2,7 @@
     "name": "goshawork/lesson1",
     "autoload": {
         "psr-4": {
-            "Goshawork\\Lesson1\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
@@ -14,6 +14,8 @@
     "require": {
         "php": "^8.0",
         "ext-json": "*",
-        "fakerphp/faker": "^1.19"
+        "fakerphp/faker": "^1.19",
+      "ext-pdo": "*",
+        "symfony/polyfill-uuid": "^1.24"
     }
 }
