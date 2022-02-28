@@ -1,12 +1,14 @@
 <?php
 
-use GeekBrains\Example_Name;
 use GeekBrains\Factories\NameFactory;
+use GeekBrains\package_name\Example_Name;
 
 spl_autoload_register(function ($class) {
-    $lastPosition = strrpos($class, "\\");
-    $file = str_replace("\\", DIRECTORY_SEPARATOR, substr($class, 0, $lastPosition + 1)) .
-        str_replace("_", DIRECTORY_SEPARATOR, substr($class, $lastPosition + 1)) . '.php';
+    $directories = explode('\\', $class);
+
+    $className = str_replace('_', DIRECTORY_SEPARATOR, array_pop($directories));
+    $file = sprintf('%s.php', implode(DIRECTORY_SEPARATOR, array_merge($directories, [$className])));
+
     if (file_exists($file)) {
         require $file;
     }
