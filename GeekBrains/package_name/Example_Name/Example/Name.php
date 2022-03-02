@@ -2,7 +2,6 @@
 
 namespace GeekBrains\package_name;
 
-use GeekBrains\Person\Name;
 
 class Example_Name
 {
